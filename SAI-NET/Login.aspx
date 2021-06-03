@@ -5,8 +5,8 @@
     usuarios.Add("admin@inacapmail.cl", "123456");
     usuarios.Add("usuario@inacapmail.cl", "654321");
 
-    string user = (string)Request.Form["user"];
-    string pass = (string)Request.Form["pass"];
+    string user = (string)Request.Form["txtMail"];
+    string pass = (string)Request.Form["txtPass"];
 
     // Si Session["contador"] es null, define 'contador' como 2, si no definelo como (int) Session["contador"]
     int contador = Session["contador"] == null ? 3 : (int)Session["contador"];
@@ -20,7 +20,7 @@
     try
     {
 
-        if (usuarios[user] == pass)
+        if (pass.Equals(usuarios[user]))
         {
             Session["user"] = user;
             Response.Redirect("Home.aspx");
@@ -29,14 +29,14 @@
         {
             contador--;
             Session["contador"] = contador;
-            Response.Redirect("Index.aspx");
+            Response.Redirect("Index.aspx?r=" + usuarios[user]);
         }
     }
-    catch (Exception)
+    catch (KeyNotFoundException ex)
     {
         contador--;
         Session["contador"] = contador;
-        Response.Redirect("Index.aspx");
+        Response.Redirect("Index.aspx?r=" + user + "&p=" + pass);
     }
 
 

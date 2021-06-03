@@ -38,11 +38,11 @@
 
                     <form action="Login.aspx" method="POST">
                         <div class="input-field">
-                            <input type="email" id="txtMail" required>
+                            <input type="email" id="txtMail" name="txtMail" required>
                             <label for="txtMail">Correo electrónico</label>
                         </div>
                         <div class="input-field">
-                            <input type="password" id="txtPass" required>
+                            <input type="password" id="txtPass" name="txtPass" required>
                             <label for="txtPass">Contraseña</label>
                         </div>
                         <div class="input-field center">
