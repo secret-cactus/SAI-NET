@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SAI_NET.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%: Page.Title %> - SAI</title>
+    <!-- Importar Google Icon font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Importar css de Materialize-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+
+<body>
+    <nav>
+        <div class="nav-wrapper blue darken-4">
+            <a href="Home.aspx" class="brand-logo">SAI</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="buscar.html">Buscar</a></li>
+                <li><a href="Inventario.aspx">Inventario</a></li>
+                <li><a href="movimientos.html">Movimientos</a></li>
+                <li><a href="usuarios.html">Usuarios</a></li>
+                <li><a href="AboutUs.aspx">Sobre nosotros</a></li>
+                <li><a href="index.html">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="buscar.html">Buscar</a></li>
+        <li><a href="Inventario.aspx">Inventario</a></li>
+        <li><a href="movimientos.html">Movimientos</a></li>
+        <li><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="aboutus.html">Sobre nosotros</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+    </ul>
+
+
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        <!-- Acá iran nuestras páginas -->
+        Erro!
+    </asp:ContentPlaceHolder>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+
+    <!-- Mantener importación de js al final del cuerpo-->
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+</body>
+</html>
