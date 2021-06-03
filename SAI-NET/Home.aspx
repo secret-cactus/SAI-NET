@@ -16,7 +16,7 @@
                             <p>Agregue, elimine o modifique registros del inventario actual</p>
                         </div>
                         <div class="card-action">
-                            <a href="inventario.html">Ir a <i>Inventario</i></a>
+                            <a href="inventario.aspx">Ir a <i>Inventario</i></a>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                             <p>Agregue, elimine o modifique registros de los usuarios admitidos</p>
                         </div>
                         <div class="card-action">
-                            <a href="usuarios.html">Ir a <i>Usuarios</i></a>
+                            <a href="usuarios.aspx">Ir a <i>Usuarios</i></a>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                             <p>Consulte los movimientos recientes</p>
                         </div>
                         <div class="card-action">
-                            <a href="movimientos.html">Ir a <i>Movimientos</i></a>
+                            <a href="movimientos.aspx">Ir a <i>Movimientos</i></a>
                         </div>
                     </div>
                 </div>
