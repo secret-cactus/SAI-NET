@@ -70,7 +70,7 @@
     <Content Include="css\custom.css" />
     <Content Include="css\materialize.css" />
     <Content Include="formularios\Articulo.aspx" />
-    <Content Include="formularios\WebForm2.aspx" />
+    <Content Include="formularios\Usuario.aspx" />
     <Content Include="Movimientos.aspx" />
     <Content Include="img\background.png" />
     <Content Include="img\cactus_flor.gif" />
@@ -95,12 +95,12 @@
     <Compile Include="formularios\Articulo.aspx.designer.cs">
       <DependentUpon>Articulo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="formularios\WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
+    <Compile Include="formularios\Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="formularios\WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
+    <Compile Include="formularios\Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Movimientos.aspx.cs">
       <DependentUpon>Movimientos.aspx</DependentUpon>

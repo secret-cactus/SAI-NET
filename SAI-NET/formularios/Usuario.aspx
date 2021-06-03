@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Formulario de usuario" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="SAI_NET.formularios.WebForm2" %>
+﻿<%@ Page Title="Formulario de usuario" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Usuario.aspx.cs" Inherits="SAI_NET.formularios.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <main class="container">
 
@@ -83,8 +83,6 @@
                     </div>
 
                 </div>
-
-            </div>
 
             </div>
 
