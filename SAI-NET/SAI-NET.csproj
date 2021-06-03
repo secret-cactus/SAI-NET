@@ -87,6 +87,7 @@
     <Content Include="Inventario.aspx" />
     <Content Include="Usuarios.aspx" />
     <Content Include="Index.aspx" />
+    <Content Include="Buscar.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="formularios\Articulo.aspx.cs">
@@ -152,6 +153,13 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar.aspx.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buscar.aspx.designer.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
