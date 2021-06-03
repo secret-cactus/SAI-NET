@@ -24,11 +24,18 @@
         <a href="#" class="brand-logo left">SAI</a>
     </nav>
 
+    <%
+        // Si Session["contador"] es null, define 'contador' como 2, si no definelo como (int) Session["contador"]
+        int contador = Session["contador"] == null ? 3 : (int)Session["contador"];
+    %>
+
     <section class="section">
         <div class="row">
             <div class="col s12 m6 l4 offset-m3 offset-l4 z-depth-2 white-container">
                 <h3>Inicie sesión</h3>
-                <form action="home.aspx">
+                <% if (contador > 0)
+                    { %>
+                <form action="Login.aspx" method="POST">
                     <div class="input-field">
                         <input type="email" id="txtMail" required>
                         <label for="txtMail">Correo electrónico</label>
@@ -40,7 +47,21 @@
                     <div class="input-field center">
                         <button class="btn blue darken-4" type="submit">Ingresar</button>
                     </div>
+                    <p>Intentos restantes: <%=contador%></p>
                 </form>
+                <% } else { %>
+
+                <p>Se han acabado los intentos</p>
+                <p>Intentos restantes: <%=contador%></p>
+
+                <form action="Login.aspx" method="post">
+                    <div class="input-field center">
+                        <button class="btn blue darken-4" type="submit">Reiniciar intentos</button>
+                    </div>
+                </form>
+
+
+                <%} %>
             </div>
         </div>
     </section>
