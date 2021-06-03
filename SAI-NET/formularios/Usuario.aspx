@@ -98,7 +98,7 @@
         $(document).ready(function() {
             $('.sidenav').sidenav();
             $('.btnVolver').click(function() {
-                var destino = '../usuarios.html';
+                var destino = '../usuarios.aspx';
                 window.location.href = destino;
             });
         });

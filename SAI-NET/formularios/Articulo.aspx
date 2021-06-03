@@ -50,7 +50,7 @@
         $(document).ready(function() {
             $('.sidenav').sidenav();
             $('.btnVolver').click(function() {
-                var destino = '../inventario.html';
+                var destino = '../inventario.aspx';
                 window.location.href = destino;
             });
         });

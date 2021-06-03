@@ -44,7 +44,7 @@
         </section>
 
         <div class="fixed-action-btn">
-            <a class="btn-floating btn-large red" href="formularios\articulo.html">
+            <a class="btn-floating btn-large red" href="formularios\articulo.aspx">
                 <i class="large material-icons">add</i>
             </a>
         </div>
@@ -60,7 +60,7 @@
             $('.sidenav').sidenav();
             $('.fixed-action-btn').floatingActionButton();
             $('.btnModificar').click(function () {
-                var destino = './formularios/articulo.html';
+                var destino = './formularios/articulo.aspx';
                 window.location.href = destino;
             });
             $('.btnEliminar').click(function () {
