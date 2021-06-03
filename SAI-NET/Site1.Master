@@ -13,8 +13,16 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
-
 <body>
+
+    <% 
+        // Si no hay ningún usuario definido, redirigelo a index.
+        if (Session["user"] == null)
+        {
+            Response.Redirect("Index.aspx");
+        }
+    %>
+
     <nav>
         <div class="nav-wrapper blue darken-4">
             <a href="Home.aspx" class="brand-logo">SAI</a>
@@ -42,7 +50,6 @@
 
     <asp:ContentPlaceHolder ID="MainContent" runat="server">
         <!-- Acá iran nuestras páginas -->
-        Erro!
     </asp:ContentPlaceHolder>
 
     <script>

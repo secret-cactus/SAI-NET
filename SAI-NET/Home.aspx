@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="SAI_NET.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <main class="container white-container">
-        <section class=" container section">
+        <section class="container section">
             <h1 class="header">Bienvenido, <i>usuario</i></h1>
         </section>
 
