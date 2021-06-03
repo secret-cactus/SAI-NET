@@ -35,31 +35,31 @@
                 <h3>Inicie sesión</h3>
                 <% if (contador > 0)
                     { %>
-                <form action="Login.aspx" method="POST">
-                    <div class="input-field">
-                        <input type="email" id="txtMail" required>
-                        <label for="txtMail">Correo electrónico</label>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" id="txtPass" required>
-                        <label for="txtPass">Contraseña</label>
-                    </div>
-                    <div class="input-field center">
-                        <button class="btn blue darken-4" type="submit">Ingresar</button>
-                    </div>
-                    <p>Intentos restantes: <%=contador%></p>
-                </form>
+
+                    <form action="Login.aspx" method="POST">
+                        <div class="input-field">
+                            <input type="email" id="txtMail" required>
+                            <label for="txtMail">Correo electrónico</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="txtPass" required>
+                            <label for="txtPass">Contraseña</label>
+                        </div>
+                        <div class="input-field center">
+                            <button class="btn blue darken-4" type="submit">Ingresar</button>
+                        </div>
+                        <p>Intentos restantes: <%=contador%></p>
+                    </form>
+
                 <% } else { %>
 
-                <p>Se han acabado los intentos</p>
-                <p>Intentos restantes: <%=contador%></p>
-
-                <form action="Login.aspx" method="post">
-                    <div class="input-field center">
-                        <button class="btn blue darken-4" type="submit">Reiniciar intentos</button>
-                    </div>
-                </form>
-
+                    <form action="Login.aspx?q=Reset" method="post">
+                        <p>Se han acabado los intentos</p>
+                        <p>Intentos restantes: <%=contador%></p>
+                        <div class="input-field center">
+                            <button class="btn blue darken-4" type="submit">Reiniciar intentos</button>
+                        </div>
+                    </form>
 
                 <%} %>
             </div>

@@ -11,6 +11,12 @@
     // Si Session["contador"] es null, define 'contador' como 2, si no definelo como (int) Session["contador"]
     int contador = Session["contador"] == null ? 3 : (int)Session["contador"];
 
+    if (Request["q"] == "Reset")
+    {
+        Session["contador"] = null;
+        Response.Redirect("Index.aspx");
+    }
+
     try
     {
 
