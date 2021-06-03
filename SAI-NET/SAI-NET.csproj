@@ -71,6 +71,7 @@
     <Content Include="css\materialize.css" />
     <Content Include="formularios\Articulo.aspx" />
     <Content Include="formularios\Usuario.aspx" />
+    <Content Include="Hola-Pablo.html" />
     <Content Include="Movimientos.aspx" />
     <Content Include="img\background.png" />
     <Content Include="img\cactus_flor.gif" />
