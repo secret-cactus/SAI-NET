@@ -72,6 +72,7 @@
     <Content Include="formularios\Articulo.aspx" />
     <Content Include="formularios\Usuario.aspx" />
     <Content Include="Hola-Pablo.html" />
+    <Content Include="js\inventario.js" />
     <Content Include="Login.aspx" />
     <Content Include="Movimientos.aspx" />
     <Content Include="img\background.png" />
