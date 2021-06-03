@@ -20,23 +20,23 @@
             <a href="Home.aspx" class="brand-logo">SAI</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="buscar.aspx">Buscar</a></li>
+                <li><a href="buscar.html">Buscar</a></li>
                 <li><a href="Inventario.aspx">Inventario</a></li>
-                <li><a href="movimientos.aspx">Movimientos</a></li>
-                <li><a href="usuarios.aspx">Usuarios</a></li>
+                <li><a href="movimientos.html">Movimientos</a></li>
+                <li><a href="usuarios.html">Usuarios</a></li>
                 <li><a href="AboutUs.aspx">Sobre nosotros</a></li>
-                <li><a href="index.aspx">Cerrar sesión</a></li>
+                <li><a href="index.html">Cerrar sesión</a></li>
             </ul>
         </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="buscar.aspx">Buscar</a></li>
+        <li><a href="buscar.html">Buscar</a></li>
         <li><a href="Inventario.aspx">Inventario</a></li>
-        <li><a href="movimientos.aspx">Movimientos</a></li>
-        <li><a href="usuarios.aspx">Usuarios</a></li>
-        <li><a href="aboutus.aspx">Sobre nosotros</a></li>
-        <li><a href="index.aspx">Cerrar sesión</a></li>
+        <li><a href="movimientos.html">Movimientos</a></li>
+        <li><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="aboutus.html">Sobre nosotros</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
     </ul>
 
 
