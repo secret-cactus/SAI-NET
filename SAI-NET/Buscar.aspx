@@ -9,8 +9,8 @@
             <div class="row">
 
                 <div class="input-field col s12 m8">
-                    <input type="email" name="" id="txtEmail">
-                    <label for="txtEmail">Buscar por nombre o código...</label>
+                    <input type="text" name="txtSearch" id="txtSearch">
+                    <label for="txtSearch">Buscar por nombre o código...</label>
                 </div>
 
                 <div id="cbxSearch" class="input-field col s12 m2">
@@ -23,11 +23,24 @@
                     <label>Buscar en</label>
                 </div>
 
-                <button id="btnSearch" class="btn waves-effect waves-light" type="submit">Buscar
+                <button id="btnSearch" class="btn waves-effect waves-light" onclick="Buscar();">Buscar
                     <i class="material-icons right">search</i>
                 </button>
 
             </div>
+
+            <section class="container section">
+            <table id="tablaUsuarios">
+                <tr>
+                    <th>Número</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Edad</th>
+                    <th>Genero</th>
+                    <th>Permisos</th>
+                </tr>
+            </table>
+        </section>
 
         </section>
 
@@ -35,18 +48,13 @@
 
     <!-- Mantener importación de js al final del cuerpo-->
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/Buscar.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
 
     <script>
         $(document).ready(function() {
             $('.sidenav').sidenav();
             $('select').formSelect();
-            $('#btnSearch').click(function() {
-                var destino = $('#cbxSearch').find(":selected").val();
-                if (destino != "") {
-                    window.location.href = "./detalle/" + destino + ".html";
-                }
-            });
         });
     </script>
 </asp:Content>

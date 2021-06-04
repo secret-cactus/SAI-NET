@@ -33,6 +33,21 @@ var usuarios = {
 }
 
 function Buscar() {
+    var barra_busqueda = $("#txtSearch").val();
+    var usuario = usuarios[barra_busqueda];
+
+    if (typeof usuario !== 'undefined') {
+        var row = "<tr><td>" + usuario["numero"] + "</td>" +
+            "<td>" + usuario["nombre"] + "</td>" +
+            "<td>" + usuario["email"] + "</td>" +
+            "<td>" + usuario["edad"] + "</td>" +
+            "<td>" + usuario["genero"] + "</td>" +
+            "<td>" + usuario["permisos"] + "</td></tr>";
+        $("#tablaUsuarios>tbody").prepend(row);
+    } else {
+        alert("Usuario no encontrado");
+    }
+
 
 }
 
