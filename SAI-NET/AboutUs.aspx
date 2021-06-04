@@ -1,18 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="SAI_NET.WebForm3" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    
 
-
-    <main class="container white-container">
+   <main class="container white-container">
         <section class=" container section">
-            <h1 class="header">Autores</h1>
-            <p>Este es nuestro equipo de trabajo</p>
+            <h1 class="header">Autores (probando js y git)</h1>
+            <div>Integrante 1: Diego Aravena</div>
+            <div>Integrante 2: Pablo Amion</div>
+            <div>Asignatura: Programación Avanzada</div>
+            <div>Fecha: 04/06/2021</div>
+            <div>Profesor: Cesar Arce</div>
         </section>
 
         <section class="section container">
             <div class="row">
                 <div class="col s12 m6">
                     <div class="card">
+                        <input type="button" id="boton1" value="Mostrar"/>
                         <div class="card-image">
                             <img src="img/pablo.jpg">
                         </div>
@@ -38,6 +43,7 @@
                 </div>
                 <div class="col s12 m6">
                     <div class="card">
+                        <input type="button" id="boton2" value="Mostrar"/>
                         <div class="card-image">
                             <img src="img/diego.jfif">
                         </div>
@@ -64,17 +70,18 @@
 
             </div>
 
+            
 
         </section>
 
-
+       
     </main>
 
 
     <!-- Mantener importación de js al final del cuerpo-->
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
-
+    <script type="text/javascript" src="js/Autores.js"></script>
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
