@@ -85,6 +85,7 @@
     <Content Include="img\galeria\10.jpg" />
     <Content Include="img\galeria\11.jpg" />
     <Content Include="img\galeria\12.jpg" />
+    <Content Include="js\Autores.js" />
     <Content Include="js\Buscar.js" />
     <Content Include="js\inventario.js" />
     <Content Include="js\listado-usuarios.js" />
