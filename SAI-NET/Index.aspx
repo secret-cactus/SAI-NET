@@ -28,6 +28,11 @@
         // Si Session["contador"] es null, define 'contador' como 2, si no definelo como (int) Session["contador"]
         int contador = Session["contador"] == null ? 3 : (int)Session["contador"];
 
+        if (Request["r"] == "Logout")
+        {
+            Session["user"] = null;
+        }
+
         if (Request["r"] == "Done")
         {
     %>

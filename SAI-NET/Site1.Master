@@ -33,7 +33,8 @@
                 <li><a href="movimientos.aspx">Movimientos</a></li>
                 <li><a href="usuarios.aspx">Usuarios</a></li>
                 <li><a href="AboutUs.aspx">Sobre nosotros</a></li>
-                <li><a href="index.aspx">Cerrar sesión</a></li>
+                <li><a href="Galeria.aspx">Galería de Imágenes</a></li>
+                <li><a href="index.aspx?r=Logout">Cerrar sesión</a></li>
             </ul>
         </div>
     </nav>
@@ -44,6 +45,7 @@
         <li><a href="movimientos.aspx">Movimientos</a></li>
         <li><a href="usuarios.aspx">Usuarios</a></li>
         <li><a href="aboutus.aspx">Sobre nosotros</a></li>
+        <li><a href="Galeria.aspx">Galería de Imágenes</a></li>
         <li><a href="index.aspx">Cerrar sesión</a></li>
     </ul>
 
