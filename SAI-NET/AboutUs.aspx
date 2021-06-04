@@ -1,14 +1,32 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="SAI_NET.WebForm3" %>
+﻿<%@ Page Title="Autores" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="AboutUs.aspx.cs" Inherits="SAI_NET.WebForm3" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
 
     <main class="container white-container">
         <section class=" container section">
             <h1 class="header">Autores</h1>
-            <p>Este es nuestro equipo de trabajo</p>
+            Integrante 1:
+            <div id='wrap-1'>
+                <button class='buttontest' value="Show/Hide 1">Diego Nicolás Aravena Navarro</button>
+                <img src="img/diego.jfif" border="0" alt="image1" target="nowa_strona" class="logotest">
+            </div>
+            <br />
+            Integrante 2:
+            <div id='wrap-2'>
+                <button class="buttontest" value="Show/Hide 2">Pablo Andres Amion Jeria</button>
+                <img src="img/pablo.jpg" border="0" alt="image2" target="nowa_strona" class="logotest">
+            </div>
+
+            <br />
+            Asignatura: Programación Avanzada <br />
+            Fecha: 04/06/2021 <br />
+            Profesor: Cesar Arce <br />
         </section>
 
+        <section class="section container">
+        </section>
+
+        <!--
         <section class="section container">
             <div class="row">
                 <div class="col s12 m6">
@@ -38,6 +56,7 @@
                 </div>
                 <div class="col s12 m6">
                     <div class="card">
+
                         <div class="card-image">
                             <img src="img/diego.jfif">
                         </div>
@@ -61,12 +80,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
         </section>
-
+            -->
 
     </main>
 
@@ -74,10 +90,18 @@
     <!-- Mantener importación de js al final del cuerpo-->
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
-
+    <script type="text/javascript" src="js/Autores.js"></script>
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").toggle();
+            });
         });
     </script>
 
