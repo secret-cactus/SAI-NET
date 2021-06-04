@@ -17,6 +17,19 @@
         Response.Redirect("Index.aspx");
     }
 
+    switch (Request["q"])
+    {
+        case "Reset":
+            Session["contador"] = null;
+            Response.Redirect("Index.aspx");
+            break;
+        case "Done":
+            Response.Redirect("Index.aspx?r=Done");
+            break;
+        default:
+            break;
+    }
+
     try
     {
 
