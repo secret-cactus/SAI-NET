@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <main>
+
         <section class=" container section">
             <h1 class="header">Usuarios</h1>
         </section>
@@ -29,15 +30,15 @@
                     <p>
                         <h6>Género</h6>
                         <label>
-                            <input name="rbtnGenero" type="radio" checked />
+                            <input name="rbtnGenero" type="radio" value="Masculino" />
                             <span>Masculino</span>
                         </label>
                         <label>
-                            <input name="rbtnGenero" type="radio" />
+                            <input name="rbtnGenero" type="radio" value="Femenino" />
                             <span>Femenino</span>
                         </label>
                         <label>
-                            <input name="rbtnGenero" type="radio" />
+                            <input name="rbtnGenero" type="radio" value="Otro" />
                             <span>Otro</span>
                         </label>
                     </p>
@@ -62,26 +63,25 @@
 
                         <p>
                             <label>
-                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <input type="checkbox" class="filled-in" name="permisos" value="inventario"/>
                                 <span>Puede agregar, modificar, consultar y eliminar registros del inventario.</span>
                             </label>
                         </p>
                         <br>
                         <p>
                             <label>
-                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <input type="checkbox" class="filled-in" name="permisos" value="usuarios"/>
                                 <span>Puede agregar, modificar, consultar y eliminar registros del usuario.</span>
                             </label>
                         </p>
                         <br>
                         <p>
                             <label>
-                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <input type="checkbox" class="filled-in" name="permisos" value="bodega"/>
                                 <span>Puede retirar y devolver del inventario.</span>
                             </label>
                         </p>
-                        <button class="btn blue btnVolver">Cancelar</button>
-                        <button class="btn indigo darken-4 btnVolver">Terminar</button>
+                        <button class="btn indigo darken-4 btnVolver" name="btnAgregar" onclick="agregar_usuario();">agregar</button>
                     </div>
 
                 </div>
@@ -124,14 +124,16 @@
 
     </main>
 
-    <!-- Mantener importación de js al final del cuerpo-->
-    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <script type="text/javascript" src="js/listado-usuarios.js"></script>
 
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
-
         });
     </script>
+
+    <!-- Mantener importación de js al final del cuerpo-->
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
 </asp:Content>
