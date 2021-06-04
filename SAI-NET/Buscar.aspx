@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Buscar" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Buscar.aspx.cs" Inherits="SAI_NET.WebForm6" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <main class="container">
 
@@ -14,36 +15,49 @@
                 </div>
 
                 <div id="cbxSearch" class="input-field col s12 m2">
-                    <select>
+                    <select onchange="Cambiar_Tabla();">
                         <option value="" disabled selected>Elige...</option>
                         <option value="inventario">Inventario</option>
                         <option value="usuario">Usuarios</option>
-                        <option value="movimiento">Movimientos</option>
                     </select>
                     <label>Buscar en</label>
                 </div>
 
-                <button id="btnSearch" class="btn waves-effect waves-light" onclick="Buscar();">Buscar
+                <button id="btnSearch" class="btn waves-effect waves-light" onclick="Buscar();">
+                    Buscar
                     <i class="material-icons right">search</i>
                 </button>
 
             </div>
 
             <section class="container section">
-            <table id="tablaUsuarios">
-                <tr>
-                    <th>Número</th>
-                    <th>Nombre</th>
-                    <th>Correo</th>
-                    <th>Edad</th>
-                    <th>Genero</th>
-                    <th>Permisos</th>
-                </tr>
-            </table>
-        </section>
-
-        </section>
-
+                <table id="tablaUsuarios" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>Número</th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Edad</th>
+                            <th>Genero</th>
+                            <th>Permisos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <table id="tablaInventario" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
+                            <th>Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
     </main>
 
     <!-- Mantener importación de js al final del cuerpo-->
