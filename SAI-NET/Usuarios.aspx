@@ -3,8 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <main>
 
-        <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
-        <script type="text/javascript" src="js/listado-usuarios.js"></script>
         <section class=" container section">
             <h1 class="header">Usuarios</h1>
         </section>
@@ -139,7 +137,7 @@
             else
             { %>
         <section class="container section">
-            <p>Lo sentimos, usted no tiene permiso de administrador</p>
+            <p>Lo sentimos, usted no tiene permisos de administrador</p>
         </section>
 
 
@@ -157,4 +155,6 @@
 
     <!-- Mantener importación de js al final del cuerpo-->
     <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="js/listado-usuarios.js"></script>
 </asp:Content>
