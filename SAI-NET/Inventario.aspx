@@ -8,7 +8,7 @@
         <section class="section">
 
             <div class="row">
-
+                <form action="Inventario.aspx" name="Inventario" method="post"></form>
                 <div class="col s12 m6 center offset-m3">
                     <div class="input-field">
                         <input type="text" id="txtCodigo">
@@ -30,15 +30,35 @@
                         <label class="active" for="textarea1">Detalle</label>
                     </div>
 
-                    <button class="btn blue btnVolver">Cancelar</button>
-                    <button class="btn indigo darken-4 btnVolver">Terminar</button>
+                    <input type="button" name="btnagregar" id="btnAgregar" class="btn indigo darken-4 btnVolver" value="Agregar" />
+                    <input type="reset" name="btnlimpiar"  class="btn blue btnVolver" value="Otro Ingreso" />
+                    <%--<button class="btn indigo darken-4 btnVolver">Terminar</button>--%>
+                    <%--<button class="btn blue btnVolver">Cancelar</button>--%>
+                    
 
                 </div>
 
 
             </div>
-
+            
         </section>
+
+        <div class="tabla_inventario">
+<table cellspacing="0" class="tabla" id="tablaInventario">
+	<caption>Listado de Inventario</caption>
+	<tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Detalle</th>
+                        <th>Opciones</th>
+        </tr>
+
+</table>
+</div>
+<br>
+<a href="Home.aspx"><div class="btn"><span>Regresar al Menu</span></div></a>
+        
         <section class="container section">
             <table>
                 <thead>
@@ -89,7 +109,7 @@
     <!-- Mantener importación de js al final del cuerpo-->
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
-
+    <script type="text/javascript" src="js/inventario.js"></script>
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
