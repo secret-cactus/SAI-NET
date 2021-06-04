@@ -18,14 +18,14 @@
     }
     else {
         $("#tablaInventario>tbody").append("<tr><td>" + codigo + "</td><td>" + nombre + "</td><td>" + cantidad + "</td><td>" + detalle + "</td></tr>");
+        reset();
     }
 
-    reset();
 }
 
 function reset() {
     $("#txtCodigo").val("");
     $("#txtNombre").val("");
-    $("#txtcantidad").val("");
+    $("#numcantidad").val("");
     $("#textarea1").val("");
 }
