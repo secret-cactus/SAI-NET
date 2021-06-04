@@ -58,3 +58,12 @@ function Oscurecer() {
 function MostrarOcultar() {
 	$("#cuadro").toggle("slow");
 }
+
+
+<script>
+		$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+</script>

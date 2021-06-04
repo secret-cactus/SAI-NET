@@ -17,7 +17,10 @@
             <div class="row">
                 <div class="col s12 m6">
                     <div class="card">
-                        <input type="button" id="boton1" value="Mostrar"/>
+                        <button>Alternar entre mostrar y esconder</button>
+
+<p>holaaaaaa</p>
+
                         <div class="card-image">
                             <img src="img/pablo.jpg">
                         </div>
@@ -43,7 +46,7 @@
                 </div>
                 <div class="col s12 m6">
                     <div class="card">
-                        <input type="button" id="boton2" value="Mostrar"/>
+                        
                         <div class="card-image">
                             <img src="img/diego.jfif">
                         </div>
@@ -85,6 +88,14 @@
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").toggle();
+            });
         });
     </script>
 
