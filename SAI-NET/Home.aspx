@@ -50,4 +50,14 @@
         </section>
 
     </main>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+
+        });
+    </script>
+    
+    <!-- Mantener importación de js al final del cuerpo-->
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
 </asp:Content>

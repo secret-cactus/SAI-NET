@@ -88,7 +88,12 @@
         </div>
     </section>
     <%} %>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
 
+        });
+    </script>
     <!-- Mantener importación de js al final del cuerpo-->
     <script type="text/javascript" src="js/materialize.js"></script>
 
