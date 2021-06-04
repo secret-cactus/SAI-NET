@@ -4,8 +4,17 @@
     var cantidad = $("#numcantidad").val();
     var detalle = $("#textarea1").val();
 
-    if(codigo == "" || nombre == "" || cantidad =="" || detalle == "") {
-        alert("Por favor llenar todos los datos");
+    if(codigo == "") {
+        alert("Por favor colocar código!");
+    }
+    else if (nombre == "") {
+        alert("Por favor colocar nombre!");
+    }
+    else if (cantidad == "") {
+        alert("Por favor colocar cantidad!");
+    }
+    else if (detalle == "") {
+        alert("Por favor colocar detalle!");
     }
     else {
         $("#tablaInventario>tbody").append("<tr><td>" + codigo + "</td><td>" + nombre + "</td><td>" + cantidad + "</td><td>" + detalle + "</td></tr>");

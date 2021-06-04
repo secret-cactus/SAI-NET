@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="input-field">
-                        <input type="text" id="numcantidad">
+                        <input type="number" id="numcantidad">
                         <label class="active" for="numcantidad">Cantidad</label>
                     </div>
 
