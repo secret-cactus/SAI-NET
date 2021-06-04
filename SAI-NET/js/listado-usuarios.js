@@ -22,3 +22,25 @@
     }
 
 }
+
+function calcular_edad() {
+
+    var fecha = $('#txtCumple').val();
+
+    var hoy = new Date();
+    var date = fecha.split('-');
+
+    for (var i = 0; i < date.length; i++) {
+        var aux = parseInt(date[i]);
+        date[i] = aux;
+    }
+
+    var edad = hoy.getFullYear() - date[0];
+
+    if (hoy.getMonth() <= date[1] && hoy.getDate() <= date[2]) {
+        edad--;
+    }
+
+    $('#txtEdad').val(edad);
+
+}

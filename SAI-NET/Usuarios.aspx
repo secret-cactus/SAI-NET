@@ -24,9 +24,16 @@
                     </div>
 
                     <div class="input-field">
-                        <input type="text" name="" id="txtEdad">
-                        <label for="txtApellido">Cumpleaños</label>
+                        <input type="date" name="txtCumple" id="txtCumple" onblur="calcular_edad();">
+                        <label for="txtCumple">Cumpleaños</label>
                     </div>
+
+                    <div class="input-field">
+                        <input type="number" name="txtEdad" id="txtEdad" readonly>
+                        <label for="txtEdad">Edad</label>
+                    </div>
+
+
                     <p>
                         <h6>Género</h6>
                         <label>
