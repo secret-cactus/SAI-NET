@@ -24,8 +24,8 @@
 }
 
 function reset() {
-    $("txtcodigo").val("");
-    $("txtnombre").val("");
-    $("txtcantidad").val("");
-    $("txtdetalle").val("");
+    $("#txtCodigo").val("");
+    $("#txtNombre").val("");
+    $("#txtcantidad").val("");
+    $("#textarea1").val("");
 }

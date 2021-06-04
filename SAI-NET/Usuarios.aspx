@@ -8,7 +8,8 @@
         <section class=" container section">
             <h1 class="header">Usuarios</h1>
         </section>
-
+        <% if ((string)Session["user"] == "admin@inacapmail.cl")
+            { %>
         <section class="section container">
 
             <div class="row">
@@ -133,6 +134,17 @@
             </table>
         </section>
 
+
+        <% }
+            else
+            { %>
+        <section class="container section">
+            <p>Lo sentimos, usted no tiene permiso de administrador</p>
+        </section>
+
+
+
+        <% } %>
 
     </main>
 
