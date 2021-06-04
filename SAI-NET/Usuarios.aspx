@@ -95,6 +95,7 @@
                         </div>
 
                         <button class="btn indigo darken-4 btnVolver" name="btnAgregar" onclick="agregar_usuario();">agregar</button>
+                        <button class="btn indigo darken-2 btnVolver" name="btnAgregar" onclick="reset();">limpiar</button>
                     </div>
 
                 </div>
@@ -127,8 +128,8 @@
                         <button class="btnModificar btn green">modificar</button>
                         <button class="btnEliminar btn disabled">eliminar</button>
                     </td>
-                     -->
                 </tr>
+                     -->
             </table>
         </section>
 

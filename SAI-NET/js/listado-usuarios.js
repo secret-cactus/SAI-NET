@@ -32,6 +32,7 @@
             "<td>" + genero +"</td>" +
             "<td>"+ conseguir_etiquetas(permisos) +"</td></tr>";
         tabla.append(row);
+        reset();
     }
 
 }
@@ -84,4 +85,12 @@ function conseguir_etiquetas(lista) {
     <span class="new badge cyan" data-badge-caption="usuarios"></span>
      */
 
+}
+
+function reset() {
+    $('#txtEmail').val('');
+    $('#txtNombre').val('');
+    $('#txtPass').val('');
+    $('#txtPassConf').val('');
+    $('#txtEdad').val('');
 }
