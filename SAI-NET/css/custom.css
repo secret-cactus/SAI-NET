@@ -7,3 +7,12 @@
     background-color: white;
     border-radius: 4px;
 }
+
+img.logotest {
+    width: 500px;
+    height: 200px;
+    display: block;
+}
+
+.buttontest {
+}

@@ -5,7 +5,7 @@
 
    <main class="container white-container">
         <section class=" container section">
-            <h1 class="header">Autores (probando js y git)</h1>
+            <h1 class="header">Autores (lograndolo)</h1>
             <div>Integrante 1: Diego Aravena</div>
             <div>Integrante 2: Pablo Amion</div>
             <div>Asignatura: Programación Avanzada</div>
@@ -20,7 +20,20 @@
                         <button>Alternar entre mostrar y esconder</button>
 
 <p>holaaaaaa</p>
+                        <div id='wrap-1'>
+    <input type="button" class='buttontest' value="Show/Hide 1">
+<a href="img/pablo.jpg">
+ <img src="img/pablo.jpg" border="0" width="900" height="300" alt="image1" target="nowa_strona" class="logotest">
+</a>
 
+</div>
+<div id='wrap-2'>
+    <input type="button" class="buttontest" value="Show/Hide 2">
+<a href="img/diego.jfif">
+  <img src="img/diego.jfif" border="0" width="900" height="300" alt="image2" target="nowa_strona" class="logotest">
+</a>
+
+</div>
                         <div class="card-image">
                             <img src="img/pablo.jpg">
                         </div>
