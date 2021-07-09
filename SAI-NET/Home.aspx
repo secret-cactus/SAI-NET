@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="SAI_NET.WebForm2" %>
+﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="SAI_NET.Home" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <main class="container white-container">
         <section class="container section">

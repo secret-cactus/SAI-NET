@@ -11,7 +11,7 @@ namespace SAI_NET
 {
 
 
-    public partial class Site1
+    public partial class Main
     {
 
         /// <summary>

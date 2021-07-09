@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Inventario" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Inventario.aspx.cs" Inherits="SAI_NET.WebForm4" %>
+﻿<%@ Page Title="Inventario" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Inventario.aspx.cs" Inherits="SAI_NET.Inventario" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <main>
@@ -9,36 +9,32 @@
         <section class="section">
 
             <div class="row">
-                <form action="Inventario.aspx" name="Inventario" method="post"></form>
-                <div class="col s12 m6 center offset-m3">
-                    <div class="input-field">
-                        <input type="text" id="txtCodigo">
-                        <label class="active" for="txtCodigo">Código</label>
+                <form action="Inventario.aspx" name="Inventario" method="post">
+                    <div class="col s12 m6 center offset-m3">
+                        <div class="input-field">
+                            <asp:TextBox runat="server" type="text" id="txtCodigo" required="true"/>
+                            <label class="active" for="txtCodigo">Código</label>
+                        </div>
+
+                        <div class="input-field">
+                            <asp:TextBox runat="server" type="text" id="txtNombre" required="true"/>
+                            <label class="active" for="txtNombre">Nombre</label>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="number" id="numcantidad" min="1">
+                            <label class="active" for="numcantidad">Cantidad</label>
+                        </div>
+
+                        <div class="input-field">
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label class="active" for="textarea1">Detalle</label>
+                        </div>
+
+                        <asp:Button runat="server" name="btnAgregar" ID="btnAgregar" class="btn indigo darken-4" Text="Agregar" />
+                        <asp:Button runat="server" ID="btnLimpiar" class="btn blue" type="reset" Text="Limpiar" />
                     </div>
-
-                    <div class="input-field">
-                        <input type="text" id="txtNombre">
-                        <label class="active" for="txtNombre">Nombre</label>
-                    </div>
-
-                    <div class="input-field">
-                        <input type="number" id="numcantidad" min="1">
-                        <label class="active" for="numcantidad">Cantidad</label>
-                    </div>
-
-                    <div class="input-field">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label class="active" for="textarea1">Detalle</label>
-                    </div>
-
-                    <button name="btnAgregar" id="btnAgregar" class="btn indigo darken-4" onclick="agregar();">Agregar</button>
-                    <button name="btnLimpiar" id="btnLimpiar" class="btn blue btnVolver" onclick="reset();">Limpiar</button>
-                    <%--<button class="btn indigo darken-4 btnVolver">Terminar</button>--%>
-                    <%--<button class="btn blue btnVolver">Cancelar</button>--%>
-                </div>
-                
-    <script type="text/javascript" src="js/inventario.js"></script>
-
+                </form>
             </div>
 
         </section>

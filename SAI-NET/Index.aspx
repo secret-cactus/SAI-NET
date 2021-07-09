@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="SAI_NET.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="SAI_NET.Index" %>
 
 <html lang="es">
 
@@ -26,7 +26,7 @@
 
     <%
         // Si Session["contador"] es null, define 'contador' como 2, si no definelo como (int) Session["contador"]
-        int contador = Session["contador"] == null ? 3 : (int)Session["contador"];
+        contador = Session["contador"] == null ? 3 : (int) Session["contador"];
 
         if (Request["r"] == "Logout")
         {
@@ -56,35 +56,36 @@
                 <% if (contador > 0)
                     { %>
 
-                <form action="Login.aspx" method="POST">
+                <form runat="server" method="POST">
                     <div class="input-field">
-                        <input type="email" id="txtMail" name="txtMail" required>
+                        <asp:TextBox runat="server" type="email" id="txtMail" name="txtMail" required="true"/>
                         <label for="txtMail">Correo electrónico</label>
                     </div>
                     <div class="input-field">
-                        <input type="password" id="txtPass" name="txtPass" required>
+                        <asp:TextBox runat="server" type="password" id="txtPass" name="txtPass" required="true"/>
                         <label for="txtPass">Contraseña</label>
                     </div>
                     <div class="input-field center">
-                        <button class="btn blue darken-4" type="submit">Ingresar</button>
+                        <asp:Button ID="btnIngresar" runat="server" class="btn blue darken-4" Text="Ingresar" OnClick="btnIngresar_Click"/>
                     </div>
                     <p>Intentos restantes: <%=contador%></p>
+                    <asp:Label ID="lblMensajes" Text="PlaceholderText" runat="server" Visible="false"/>
                 </form>
 
                 <% }
                     else
                     { %>
 
+                <p>Se han acabado los intentos</p>
+                <p>Intentos restantes: <%= contador %></p>
                 <form action="Login.aspx?q=Reset" method="post">
-                    <p>Se han acabado los intentos</p>
-                    <p>Intentos restantes: <%=contador%></p>
                     <div class="input-field center">
                         <button class="btn blue darken-4" type="submit">Reiniciar intentos</button>
                     </div>
                 </form>
                 <form action="Login.aspx?q=Done" method="post">
                     <div class="input-field center">
-                        <button class="btn blue darken-4" type="submit">Reiniciar intentos</button>
+                        <button class="btn blue darken-4" type="submit">Terminar programa</button>
                     </div>
                 </form>
 
