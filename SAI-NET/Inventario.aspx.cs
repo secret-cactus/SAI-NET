@@ -17,7 +17,13 @@ namespace SAI_NET
         protected void Page_Load(object sender, EventArgs e)
         {
             MantenedorBD.Preparar("articulo", ref lblMensajes, ref phdTabla);
+
         }
+        protected void Page_Unload(object sender, EventArgs e)
+        {
+            MantenedorBD.CerrarBD();
+        }
+
         protected void btnConectarBD_Click(object sender, EventArgs e)
         {
             ConectarBD();
@@ -38,6 +44,7 @@ namespace SAI_NET
                 formulario.Visible = false;
                 lblMensajes.Text = "Ocultando formulario...";
             }
+            MantenedorBD.ActualizarTabla();
         }
         private void ConectarBD()
         {
@@ -57,13 +64,16 @@ namespace SAI_NET
             }
             else
             {
-                conn.Close();
+                MantenedorBD.CerrarBD();
                 btnConectarBD.Text = "Conectar BD";
-                lblMensajes.Text = "Base de datos deconectada.";
                 btnToggleFormulario.Enabled = false;
                 formulario.Visible = false;
             }
         }
 
+        protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+            MantenedorBD.Modificar(txtCodigo.Text, txtNombre.Text, int.Parse(txtCantidad.Text), txtDetalle.Text);
+        }
     }
 }

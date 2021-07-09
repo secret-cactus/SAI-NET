@@ -39,7 +39,7 @@ namespace SAI_NET
                 }
                 else
                 {
-                    lblMensajes.Text = "No se encontró ningún usuario...";
+                    lblMensajes.Text = "Correo o contraseña incorrecta. Verifique sus credenciales.";
                     contador--;
                     Session["contador"] = contador;
                 }

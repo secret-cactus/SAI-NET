@@ -9,7 +9,7 @@
                 <asp:Button ID="btnConectarBD" runat="server" class="btn btn-small" Text="Conectar BD" OnClick="btnConectarBD_Click" />
             </section>
 
-            <section id="formulario" runat="server" class="section container center" visible="false">
+            <section id="formulario" runat="server" class="section container" visible="false">
                 <div class="row ">
                     <div class="input-field">
                         <asp:TextBox runat="server" type="text" ID="txtCodigo" />
@@ -22,16 +22,16 @@
                     </div>
 
                     <div class="input-field">
-                        <input type="number" id="numcantidad" min="1">
-                        <label class="active" for="numcantidad">Cantidad</label>
+                        <asp:TextBox runat="server" type="number" id="txtCantidad" min="1"/>
+                        <label class="active" for="txtCantidad">Cantidad</label>
                     </div>
 
                     <div class="input-field">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label class="active" for="textarea1">Detalle</label>
+                        <asp:TextBox runat="server" id="txtDetalle"/>
+                        <label class="active" for="txtDetalle">Detalle</label>
                     </div>
 
-                    <asp:Button runat="server" name="btnAgregar" ID="btnAgregar" class="btn indigo darken-4" Text="Agregar" />
+                    <asp:Button runat="server" name="btnAgregar" ID="btnAgregar" class="btn indigo darken-4" Text="Agregar" OnClick="btnAgregar_Click" />
                     <asp:Button runat="server" ID="btnLimpiar" class="btn blue" type="reset" Text="Limpiar" />
                 </div>
             </section>
@@ -39,18 +39,6 @@
 
         <section class="container section">
             <table>
-                <!--<thead> 
-                    <tr>
-                        <th>Código</th>
-                        <th>Nombre</th>
-                        <th>Cantidad</th>
-                        <th>Detalle</th>
-                        <th>Opciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-                -->
                 <asp:PlaceHolder runat="server" ID="phdTabla"></asp:PlaceHolder>
             </table>
         </section>
