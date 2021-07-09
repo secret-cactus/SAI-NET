@@ -54,15 +54,16 @@
         <!-- Acá iran nuestras páginas -->
     </asp:ContentPlaceHolder>
 
+
+    <!-- Mantener importación de js al final del cuerpo-->
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
         });
     </script>
-
-    <!-- Mantener importación de js al final del cuerpo-->
-    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>
-
 </body>
 </html>

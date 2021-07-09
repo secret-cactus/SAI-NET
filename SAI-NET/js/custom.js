@@ -1,0 +1,3 @@
+function toggleFormulario() {
+    $(".formulario").toggle();
+}

@@ -29,5 +29,16 @@ img.logotest {
     display: block;
 }
 
-.buttontest {
+.mensajes {
+    position:fixed;
+    bottom: 0;
+    padding: 3px;
+    width: 100%;
+    color: white;
+    font-family: 'Lucida Console';
+    background-color: black;
+}
+
+thead {
+    text-transform: capitalize;
 }
