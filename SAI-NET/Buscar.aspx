@@ -6,7 +6,6 @@
         <h1 class="header">Buscar registros</h1>
 
         <section class="section">
-
             <div class="row">
 
                 <div class="input-field col s12 m8">
@@ -29,35 +28,36 @@
                 </button>
 
             </div>
+        </section>
 
-            <section class="container section">
-                <table id="tablaUsuarios" style="display: none;">
-                    <thead>
-                        <tr>
-                            <th>Número</th>
-                            <th>Nombre</th>
-                            <th>Correo</th>
-                            <th>Edad</th>
-                            <th>Genero</th>
-                            <th>Permisos</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-                <table id="tablaInventario" style="display: none;">
-                    <thead>
-                        <tr>
-                            <th>Código</th>
-                            <th>Nombre</th>
-                            <th>Cantidad</th>
-                            <th>Detalle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-            </section>
+        <section class="container section">
+            <table id="tablaUsuarios" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Edad</th>
+                        <th>Genero</th>
+                        <th>Permisos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <table id="tablaInventario" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
     </main>
 
     <!-- Mantener importación de js al final del cuerpo-->
@@ -66,7 +66,7 @@
     <script type="text/javascript" src="js/materialize.js"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.sidenav').sidenav();
             $('select').formSelect();
         });
